@@ -1,0 +1,328 @@
+{
+	"CommonWebCore": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "returnWebElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strObjXPath",
+				"paramInfo": {}
+			},
+			{
+				"name": "taboutOfElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strObjXPath",
+				"paramInfo": {}
+			},
+			{
+				"name": "findWebElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strObjXPath",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnBrowserInstanceCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "waitForCountOfBrowserInstances",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intCntBrowser, boolCntEquals",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnWebElementCustomTiming",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strObjXPath, intMaxWaitSecs, intIntervalMS",
+				"paramInfo": {}
+			},
+			{
+				"name": "objHighlightElementJS",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weElement, strTestObjType, strTestObjName",
+				"paramInfo": {}
+			},
+			{
+				"name": "objMoveToClickElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weElement, strTestObjType, strTestObjName, intOffSetX, intOffSetY",
+				"paramInfo": {}
+			},
+			{
+				"name": "objVerifyState",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weObject, strObjName, boolVisible, boolEnabled",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnChildElements",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weObject, strChildObjXPath",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnChildElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weObject, strChildObjXPath",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnChildElementByPropertyValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weParentObject, strChildObjXPath",
+				"paramInfo": {}
+			},
+			{
+				"name": "isAttribtuePresent",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "we, strAttribute",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetEditBoxValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weEditBox, strObjName, strAssignedValue, boolClearValue, boolVerifyValue, boolTabOutOfField",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetVerEditBoxValueClickEnter",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weEditBox, strObjName, strObjFullXpath, strAssignedValue, boolClearValue, boolVerifyValue, boolClickEnter",
+				"paramInfo": {}
+			},
+			{
+				"name": "objChkClickableAndStaleObjectTest",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weElement",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetMultiLineTextBoxValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weEditBox, strObjName, strAssignedValue, boolClearValue, boolVerifyValue, boolTabOutOfField",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetEditBoxAttibuteValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weEditBox, strObjName, strAssignedValue, strAssignAttribute, boolVerifyValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "weSetAttibute",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weElement, strElemName, strValue, strAttibute",
+				"paramInfo": {}
+			},
+			{
+				"name": "objVerifyElementAttribute",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weElement, strObjName, strAssignedValue, strAssignedAttribute",
+				"paramInfo": {}
+			},
+			{
+				"name": "objVerifyEditBoxValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weEditBox, strObjName, strAssignedValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "objVerifyTextBoxValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weEditBox, strObjName, strAssignedValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetMaskEditBoxValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weEditBox, strObjName, strAssignedValue, boolClearValue, boolInputEncrypted, boolVerifyValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "objVerifyMsgBoxValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weMsgBox, strObjName, strAssignedValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "objGetCheckboxChecked",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weCheckbox",
+				"paramInfo": {}
+			},
+			{
+				"name": "objVerifyCheckBoxChecked",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weCheckbox, boolChecked",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetCheckBox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weCheckBox, strObjName, boolIsChecked",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetCheckBoxJavaScript",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weCheckBox, strObjName, boolIsChecked",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetGraphicCheckBox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weCheckSelector, weCheckBox, strAssocText, boolIsChecked",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetRadioGroupOption",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weRadioGroup, strObjName, strRadioOptXpath, strRadioGrpXPath, strRadioBtnXPath, strRadioOptext, boolVerifyValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetRadioGroupOptionJavaScript",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weOptionParent, strObjName, strRadioOptXpath, strRadioGrpXPath, strRadioBtnXPath, strRadioSelXPath, strRadioOptext, boolVerifyValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSelectPickListItemByOption",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weDropDown, strDropDownXPath, strObjName, strItemText, boolMatchText, boolByIndex",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSelectVerifyItemSelectedByOption",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weDropDown, strObjName, strItemText, boolMatchText",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSelectListBoxItemByChild",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weListBox, strObjName, strItemXPath, strItemText",
+				"paramInfo": {}
+			},
+			{
+				"name": "objVerifyListBoxItem",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapVerLstItemData",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSelectListBoxItemByChildContains",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weListBox, strObjName, strItemXPath, strItemText",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSelectListBoxItemSeparateSelectElemByChild",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weListBox, strObjName, strItemXPath, strSelectItemXpath, strItemText",
+				"paramInfo": {}
+			},
+			{
+				"name": "waitForPageLoad",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnWebElemChildElementCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weParent, strChildXPath",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnChildElementCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strParentXpath, strChildXPath",
+				"paramInfo": {}
+			}
+		]
+	}
+}

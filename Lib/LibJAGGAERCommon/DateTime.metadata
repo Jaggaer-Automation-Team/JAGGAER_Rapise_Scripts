@@ -1,0 +1,360 @@
+{
+	"DateTime": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "datetimeReturnDynamicFormatedDateTime",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "/*string*/strInValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "datetimeReturnDynamicFormatedDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strDateValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "datetimeReturnDynamicFormatedTime",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strTimeValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "timeCreateDateTimeValueForFileName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "calculateDateValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate, strOutputDateFormat",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnStdDateFormat",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnDateTimeWithUTCOffset",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "now",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnDateTimeMilliSecsWithUTCOffset",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "now, boolRemoveColonInUTC",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnMonthDayYearMapper",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnFullMonthNameFromDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnAbbrevMonthNameFromDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnMonthNumberFromDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnDayValueFromDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnFullDayNameFromDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnAbbrevDayNameFromDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnYearValueFromDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnMonthNumToFullName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intMonthNumber",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnMonthNumToAbbreviation",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intMonthNumber",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnWkDayNumToDayName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intWkDayNumber",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnDateDayNames",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "isValidDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnDateformat",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnFormatedDate",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInDate, strOutFormat",
+				"paramInfo": {}
+			},
+			{
+				"name": "verifyAssignedDateFormatValid",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInDateFormat",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnFormatedDateFromMMddYYYYToYYYYMMdd",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnFormatedDateFromYYYYMMddToMMddYYYY",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInDate",
+				"paramInfo": {}
+			},
+			{
+				"name": "WaitSecs",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "numSecs",
+				"paramInfo": {}
+			},
+			{
+				"name": "WaitMilliSecs",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "numMilliSecs",
+				"paramInfo": {}
+			},
+			{
+				"name": "myTimeDifferanceKeyword",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "timeGetStrDiffMillSecsInToSeconds",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "startTimeMillSecs, endTimeMillSecs",
+				"paramInfo": {}
+			},
+			{
+				"name": "timeGetStrDiffMillSecsInMinSeconds",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "startTimeMillSecs, endTimeMillSecs",
+				"paramInfo": {}
+			},
+			{
+				"name": "isValidTime_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnTimeFormat_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnStdTimeFormat_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnTimePart",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime, partFormat",
+				"paramInfo": {}
+			},
+			{
+				"name": "return24HrValueFromTime_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "return23HrValueFromTime_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "return12HrValueFromTime_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnMinuteValueFromTime_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnSecondValueFromTime_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnAMPMValueFromTime_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime",
+				"paramInfo": {}
+			},
+			{
+				"name": "verifyAssignedTimeFormatValid",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInDateFormat",
+				"paramInfo": {}
+			},
+			{
+				"name": "returnFormatedTime_Original",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInTime, strAssignedFormat",
+				"paramInfo": {}
+			},
+			{
+				"name": "strTimeFormat_is_null",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "formatStr",
+				"paramInfo": {}
+			}
+		]
+	}
+}

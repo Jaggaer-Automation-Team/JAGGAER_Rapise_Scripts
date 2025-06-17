@@ -1,0 +1,16 @@
+{
+	"FileOperation": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "base64Encryption",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFileFullPath",
+				"paramInfo": {}
+			}
+		]
+	}
+}

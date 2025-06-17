@@ -1,0 +1,64 @@
+{
+	"FileSystem": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "FileSystem_filePathConversion",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strAssgPath",
+				"paramInfo": {}
+			},
+			{
+				"name": "fileSetTempDriveLetter",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "fileSetDownloadDirPath",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "fileCreateExecutionDirectory",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "boolIsInput, boolCreateTCDir",
+				"paramInfo": {}
+			},
+			{
+				"name": "getFolderAbsolutePath",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFolder",
+				"paramInfo": {}
+			},
+			{
+				"name": "deleteFiles",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFilePathList",
+				"paramInfo": {}
+			},
+			{
+				"name": "deleteDirectoryFiles",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strDirPath",
+				"paramInfo": {}
+			}
+		]
+	}
+}

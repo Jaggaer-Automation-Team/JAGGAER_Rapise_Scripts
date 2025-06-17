@@ -1,0 +1,496 @@
+{
+	"ExcelData": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "excelOpenExcelWB",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFilePath",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelOpenTCInputSheet",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strSheetName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetSheetCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb, boolOutputDetails, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetAllSheetNames",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb, boolOutputDetails, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetActiveWBSheetName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetActiveWBSheetByName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb, strSheetName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetSheetByID",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb, intSheetID",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetSheetIDByName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb, strSheetName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelReturnSheetID",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb, strSheetName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetSheetByName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb, strSheetName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelRenameSheet",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb, strOrgSheetName, strNewSheetName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetRowCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetRowAndColCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelReturnLoopStartEndRow",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intStartRow, intEndRow, intInputRowCount",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetHeaderColCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetHdrColNames",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetHdrColNamesValuesOnly",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetColNameByIndex",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet, intColIndex",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetColIndexByColName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSht, strColName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetRow",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet, intRowNum",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetRowColCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgRow",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetCellFromRowByColName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgRow, strColName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetCellValueFromRowByColName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgRow, strColName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetCellValueFromRowByColNumber",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgRow, intColNum",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetCellValueByRowNumColName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet, intRowNum, strColName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetCellValueByRowNumColNum",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet, intRowNum, intColNum",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetCellValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgCell",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelGetCellByRowColNumber",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet, intRowNum, intColNum",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateWorkbook",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFilePath, strSheetName, boolDeleteIfExist, boolOutputDetails, boolStopOnFailError, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelAddSheet",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFilePath, strSheetName, boolOutputDetails, boolStopOnFailError, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSaveOutputFile",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "wb",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelAddSheetToWorkBook",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strSheetName",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateShtWithHdrCols",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strShtName, strShtHdrColNames",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelOpenExcelFileInputStream",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFilePath",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCloseExcelFileInputStream",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "inputStream",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelOpenExcelFileOutputStream",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFilePath",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCloseExcelFileOutputStream",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "outputStream",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelOpenWBFromInputStream",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "inputStream",
+				"paramInfo": {}
+			},
+			{
+				"name": "createWorkbookFromBuffer",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "buffer",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelOpenWBFromOutputStream",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "outputStream",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelWriteWBDataAndClose",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgWb, strFilePath",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateHeaderCols",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strColNames",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelAutofitCols",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetCellValueByRowColNumber",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intRowNum, intColNum, strAssgValue, strAssgTheme",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetCellValueByRowNumberColName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intRowNum, strAssgColName, strAssgValue, strAssgTheme",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetCellValueByRowColNumberCustTheme",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapCustomValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetCellValueByRowColNaneCustTheme",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapCustomValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetHeaderColName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgWb, assgSheet, intColNum, strAssgValue, boolOutputDetails, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetRowData",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFilePath, strSheetName, strColValues, strColValueDelimiter, intRowNumber, boolOutputDetails, boolStopOnFailError, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetColDataFormat",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet, intColNum, strAssgValue, boolOutputDetails, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetSaveColWidth",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strFilePath, strSheetName, intColNumber, intColWidth, boolOutputDetails, boolStopOnFailError, strReporterOutput",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateCellFont",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgWb, assgCellStyle, strFontName, strFontColor, intFontHtInPts, boolIsBold, boolIsItalic",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateCellFontRGBColor",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgWb, assgCellStyle, strFontName, strRGBAColor, intFontHtInPts, boolIsBold, boolIsItalic",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateCellAllignment",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgCellStyle, strHorzAlign, strVertAlign",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateCellBorders",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgCellStyle, strLeftStyle, strLeftColor, strTopStyle, strTopColor, strRightStyle, strRightColor, strBottomStyle, strBottomColor",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateCellFill",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "WB, assgCellStyle, intRed, intGreen, intBlue, strFillPattern",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelCreateXSSFColor",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "WB, intRed, intGreen, intBlue",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetRowCellFormatByTheme",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intRowNumber, strRowTheme",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetSaveCellTheme",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intRowNum, intColNum, strCellTheme",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelSetSaveCellCustomTheme",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapCellTheme",
+				"paramInfo": {}
+			},
+			{
+				"name": "excelMapSheetRowValues",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgSheet, intInputRowNumber",
+				"paramInfo": {}
+			}
+		]
+	}
+}

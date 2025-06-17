@@ -1,0 +1,654 @@
+{
+	"CommonWeb": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "getNewBrowserProfile",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgBroswer",
+				"paramInfo": {}
+			},
+			{
+				"name": "ReturnBrowserProfileName",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "assgBroswer",
+				"paramInfo": {}
+			},			
+			{
+				"name": "OpenBrowserToURL",
+				"description": "Opens the specified browser to the assigned URL and optional organization. Processes the DoMaximize",
+				"type": "",
+				"returns": "",
+				"signature": "strBrowser, strURL, strOrgName, boolDoMaximize",
+				"paramInfo": {}
+			},
+			{
+				"name": "CloseBrowser",
+				"description": "Close the active browser.",
+				"type": "",
+				"returns": "",
+				"signature": "boolCloseAllInstances",
+				"paramInfo": {}
+			},
+			{
+				"name": "ProcessAlertPopup",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapDataValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "CaptureImage",
+				"description": "Capture a screenshot displayed dialog",
+				"type": "",
+				"returns": "",
+				"signature": "strParentXpath, strElementName, strImgCaption, boolOverRideHighLight",
+				"paramInfo": {}
+			},
+			{
+				"name": "takeWebElementScreenShot",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "objWE, strWENam",
+				"paramInfo": {}
+			},
+			{
+				"name": "GetObjectText",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName",
+				"paramInfo": {}
+			},
+			{
+				"name": "GetObjectAttributeValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\t\tstrAttribute",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyElementState",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strTestObjType, strElemName,\r\n\t\tboolHighlightElement, boolVisible, boolEnabled",
+				"paramInfo": {}
+			},
+			{
+				"name": "OutputResultHeader",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputVariables",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyResultHeader",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputVariables",
+				"paramInfo": {}
+			},
+			{
+				"name": "OutputResultBody",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputVariables",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyResultBody",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputVariables",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetSelectRowFromResultBody",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputVariables",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetSelectMultiElemInRowsOfResultBody",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputVariables",
+				"paramInfo": {}
+			},
+			{
+				"name": "GetIFrameIndex",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocXPath, strProperty, strPropertyValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "GetChildIFrameWebElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strParentXPath, strProperty, strPropertyValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "MoveToElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName",
+				"paramInfo": {}
+			},
+			{
+				"name": "ScrollToWebElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, we, strElemName",
+				"paramInfo": {}
+			},
+			{
+				"name": "MoveToWebElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, we, strElemName",
+				"paramInfo": {}
+			},
+			{
+				"name": "MoveToWebElementAndClick",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, we, strElemName",
+				"paramInfo": {}
+			},
+			{
+				"name": "MoveToAndClickElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName",
+				"paramInfo": {}
+			},
+			{
+				"name": "MoveToAndClickElementCustomTiming",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName, intMaxWaitSecs, intPollingMS",
+				"paramInfo": {}
+			},
+			{
+				"name": "HighlightElement",
+				"description": "Highlights the specified element",
+				"type": "",
+				"returns": "",
+				"signature": "objAssgElement",
+				"paramInfo": {}
+			},
+			{
+				"name": "HighlightElement_Navigator",
+				"description": "Highlights the specified element",
+				"type": "",
+				"returns": "",
+				"signature": "strObjFullXpath",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyElementTextAndColor",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\tstrAssignValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyEditBoxValue",
+				"description": "Set and verify the assigned value for the EditBox",
+				"type": "",
+				"returns": "",
+				"signature": "strActionName, strLocation, strLocXPath, strElemName,strAssignValue, boolClearValue, boolVerifyValue, boolTabOutOfField",
+				"paramInfo": {
+					"strActionName": "The name of the step action",
+					"strLocation": "The web page location value",
+					"strLocXPath": "The location XPath",
+					"strElemName": "The meaningful name of the EditBox",
+					"strAssignValue": "The assigned value to Set/Enter and Verify",
+					"boolClearValue": "Clear the value in the EditBox before Set/Enter? true/false",
+					"boolVerifyValue": "Verify the value in the EditBox after Set/Enter? true/false",
+					"boolTabOutOfField": "Tab out of the field after entry? True/False",
+				}
+			},
+			{
+				"name": "MoveToWebElement_From_WebElement_Param",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, we, strElemName",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyEditBoxSelectEnter",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullXPath, strElemName,\r\n\t\tstrAssignValue, boolClearValue, boolVerifyValue, boolClickEnter ",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyHiddenFilePathValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\t\tstrAssignValue, boolClearValue, boolVerifyValue, boolTabOutOfField",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyMultiLineTextBoxValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\t\tstrAssignValue, boolClearValue, boolVerifyValue, boolTabOutOfField ",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyEditBoxValueAttribute",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strEditFullPath, strEditName,\r\n\t\tstrValueEditFullPath, strAssignValue, strAssignAttribute, boolVerifyValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyEditBoxValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\t\tstrAssignValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyElementValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\t\tstrObjectType, strAssignValue, strElementProperty",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyElementMultiLineTextValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyMaskEditBoxValue",
+				"description": "Set and verify the assigned value for the MaskedEditBox. Used for sensitive data such as passwords or account information.",
+				"type": "",
+				"returns": "",
+				"signature": "strActionName, strLocation, strLocXPath, strElemName, strAssignValue, boolValueIsEncrypted, boolClearValue, boolVerifyValue",
+				"paramInfo": {
+					"strActionName": "The name of the step action",
+					"strLocation": "The web page location value",
+					"strLocXPath": "The location XPath",
+					"strElemName": "The meaningful name of the EditBox",
+					"strAssignValue": "The assigned value to Set/Enter and Verify",
+					"boolValueIsEncrypted": "The value to be entered is Encrypted? true/false",
+					"boolClearValue": "Clear the value in the EditBox before Set/Enter? true/false",
+					"boolVerifyValue": "Verify the value in the EditBox after Set/Enter? true/false",
+				}
+			},
+			{
+				"name": "ClickElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName, strElemType",
+				"paramInfo": {}
+			},
+			{
+				"name": "ClickWebElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "weElement, strElemName, strElemType",
+				"paramInfo": {}
+			},
+			{
+				"name": "ClickButton",
+				"description": "Click the specified button when visible and enabled.",
+				"type": "",
+				"returns": "",
+				"signature": "strActionName,strLocation, strLocXPath, strElemName, boolClickBtn",
+				"paramInfo": {
+					"strActionName": "The name of the step action",
+					"strLocation": "The web page location value",
+					"strLocXPath": "The location XPath",
+					"strElemName": "The meaningful name of the element as it is in the object repository script",
+					"boolClickBtn": "Click the assigned button? true/false. By default set to true."
+				}
+			},
+			{
+				"name": "ClickLink",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyMsgBoxText",
+				"description": "Verify the text displayed in the message box",
+				"type": "",
+				"returns": "",
+				"signature": "strActionName,strLocation, strLocXPath, strElemName, strMsgText",
+				"paramInfo": {
+					"strActionName": "The name of the step action",
+					"strLocation": "The web page location value",
+					"strLocXPath": "The location XPath",
+					"strElemName": "The meaningful name of the Message Box",
+					"strMsgText": "The assigned text displayed"
+				}
+			},
+			{
+				"name": "SetVerifyCheckBox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\t\tboolAssignedChecked, boolVerifyChecked",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyCheckBoxWebElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, weCheckBox, strElemName,\r\n\t\tboolAssignedChecked, boolVerifyChecked",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyCheckBoxGroupItems",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapChkBoxGroupData",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyCheckBoxJavaScript",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\t\tboolAssignedChecked, boolVerifyChecked",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyGraphicCheckBox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapGraphicCheckbox",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyRadioGroupOption",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemRadioGroupFullPath, strElemRadioGroupName,\r\n\t\tstrElemRadioOptXPath, strElemRadioOptBtnXPath, strOptionToSelect, boolVerifySelected",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyCustomRadioGroupOption",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapMethodInfo",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyCustomRadioGroupOptionSelected",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapMethodInfo",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSelectVerifyStandardSingleValueList",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElemName,\r\n\t\tstrValueToSelect, boolItemTextMustMatch, boolSelectItemByIndex, boolVerifySelectedItem",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyGraphicChkBoxGroupItems",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapSetVerChkboxGrpData",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetVerifyeditMultiValueFilterListBox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetVerifyEditMultiValueWithUniqueSelectValueFilterListBox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "objPickItemFromListBox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strListBoxFullXpath, strListBoxName,\r\n\t\tstrItemXpath, strValueToSelect",
+				"paramInfo": {}
+			},
+			{
+				"name": "objVerfiyListBoxItem",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapListBoxInput",
+				"paramInfo": {}
+			},
+			{
+				"name": "objPickItemFromListBoxSeperateSelectItem",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strListBoxFullXpath, strListBoxName,\r\n\t\tstrItemXpath, strItemChildSelectXpath, strValueToSelect",
+				"paramInfo": {}
+			},
+			{
+				"name": "objPickItemFromListBoxUniqueSelectValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strListBoxFullXpath, strListBoxName,\r\n\t\tstrItemXpath, strValueToSelect",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetVerifyEditSingleValueFilterListBox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "objSetVerifyEditSingleValueFilterListBoxSeperateSelectElement",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyDropDownSelectedValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strLocation, strElemFullPath, strElementName, strValue,\r\n\t\t\t\t\t\t\t\t\t\tboolMatchValue, boolVisible, boolEnabled",
+				"paramInfo": {}
+			},
+			{
+				"name": "SelectItemBasedOnObjectPropertyInParentObject",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapSelItemInfo",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyMultiErrorsOnPage",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapSetVerErrorGrpData",
+				"paramInfo": {}
+			},
+			{
+				"name": "tblGetRowCount",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strXPathForTable, strXPathForRow",
+				"paramInfo": {}
+			},
+			{
+				"name": "ExpandCollapseTreeviewObject",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapMethodData",
+				"paramInfo": {}
+			},
+			{
+				"name": "SetVerifyTreeViewCheckbox",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapMethodData",
+				"paramInfo": {}
+			},
+			{
+				"name": "OutputTabData",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "SelectTab",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifySelectedTab",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyTabData",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "SelectTreeviewObject",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapMethodData",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyTreeviewObject",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapMethodData",
+				"paramInfo": {}
+			},
+			{
+				"name": "ExpandCollapseSidebarMenuTitle",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues, strTitle, boolIsExpanded",
+				"paramInfo": {}
+			},
+			{
+				"name": "OutputSidebarMenu",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "SelectSidebarMenuTitleItem",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues, strValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifySidebarMenu",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputValues",
+				"paramInfo": {}
+			},
+			{
+				"name": "VerifyPermissionsLeftNavMenuItems",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapInputVariables",
+				"paramInfo": {}
+			}
+		]
+	}
+}

@@ -1,0 +1,168 @@
+{
+	"StringsAndNumbers": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "JComm_HandleNoData",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInput",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_GetLeftTextInString",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputText, textToFind",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_GetRightTextInString",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputText, strToFind",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_ReplaceValue",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInput, strOldValue, strNewValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_ReplaceLineFeedWithGblLineFeed",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInput",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_VerifyTextPresent",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strDispText, strExpText, strTextRule",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_ReturnValueFromString",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strDispText, strExpText, strTextRule",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_TextLocationInString",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputText, strExpectedSubString",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_StripLeadingAssignChars",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strIn",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_StringIsBoolean",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputText",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_SplitString",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputText, strDelimiter",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_StringToBoolean",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputText",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_StringToInteger",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputText",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_StringToFloat",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInputText",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_IntegerToString",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_ConcatenateTwoStrings",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strValue1, strValue2",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_StringToArray",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strValue, strDelimiter",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_ReturnStringIndexFromArray",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "arryValues, strValue",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_StringToMultiDimensionArray",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strValue, strItemDelimter, strDelimiter",
+				"paramInfo": {}
+			},
+			{
+				"name": "JComm_ProcessValueForMultiLine",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "strInValue",
+				"paramInfo": {}
+			}
+		]
+	}
+}

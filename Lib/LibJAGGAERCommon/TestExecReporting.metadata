@@ -1,0 +1,48 @@
+{
+	"TestExecReporting": {
+		"window_name": "Global Objects",
+		"flavor": "GlobalObject",
+		"actions": [
+			{
+				"name": "GetExecStatusAsString",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intStatus",
+				"paramInfo": {}
+			},
+			{
+				"name": "GetTestStepStatus",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "intStatus",
+				"paramInfo": {}
+			},
+			{
+				"name": "ReportStepResults",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "mapStepInput",
+				"paramInfo": {}
+			},
+			{
+				"name": "GenStepReportingMap",
+				"description": "Generate the reporting map based on values passed in.",
+				"type": "",
+				"returns": "",
+				"signature": "/*string*/strStepAction, /*string*/strStepDesc, /*string*/strStepExpect, /*string*/ strStepActual, /*string*/strStepData, /*boolean*/boolStepPassed",
+				"paramInfo": {}
+			},
+			{
+				"name": "ReportDoSnapshot",
+				"description": "",
+				"type": "",
+				"returns": "",
+				"signature": "objExtRptMod, mapStepInput",
+				"paramInfo": {}
+			}
+		]
+	}
+}

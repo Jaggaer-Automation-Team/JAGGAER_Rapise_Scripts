@@ -805,6 +805,17 @@ function DateTime_returnFormatedDateFromYYYYMMddToMMddYYYY (strInDate) {
 /**
  * ---------------------------------  Time Methods ---------------------------------------
  */
+ /**
+ * Helper function for `Thread.sleep` equivalent.
+ * Since `export async` and `Promise` are not allowed, this will be a blocking "busy-wait" loop.
+ * Use with caution as it blocks the Node.js event loop.
+ */
+function blockingSleep(ms) {
+	const start = Date.now();
+	while (Date.now() < start + ms) {
+		// Busy-wait to simulate Thread.sleep()
+	}
+}
 /**
  * ------------------ WaitSecs -----------------------
  * Wait the assigned number of seconds
@@ -819,12 +830,9 @@ function DateTime_returnFormatedDateFromYYYYMMddToMMddYYYY (strInDate) {
 */
 // public static void WaitSecs (int numSecs) {
 function DateTime_WaitSecs (numSecs) { // void return type is implicit
-	const intNumMillSecs = numSecs * 1000;
-	const currentTimeInit = new Date().getTime(); // Renamed from currentTime
-	const endTime = currentTimeInit + intNumMillSecs;
-	let newTime = new Date().getTime();
-	while (endTime >= newTime) {
-		newTime = new Date().getTime();
+	if (numSecs > 0){
+		const intNumMillSecs = numSecs * 1000;
+		blockingSleep(intNumMillSecs);
 	}
 }
 /*

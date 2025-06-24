@@ -121,6 +121,7 @@ function CommonWeb_ReturnBrowserProfileName (strAssgBrowser) {
 	{
 		case 'Chrome':
 			strBrowserProfile = 'Selenium - Chrome';
+			GetWebDriverNonProfileCapabilities(strBrowserProfile);
 			break;
 		case 'Edge':
 			strBrowserProfile = 'Selenium - Edge';
@@ -139,6 +140,20 @@ function CommonWeb_ReturnBrowserProfileName (strAssgBrowser) {
 	}
 	return strBrowserProfile
 }
+
+function GetWebDriverNonProfileCapabilities(profile)
+{
+    var caps = {};
+    caps['browserName'] = 'chrome';
+    caps['goog:chromeOptions'] = {
+        args: [
+            '--disable-features=PasswordChangeDetection',
+            '--disable-save-password-bubble'
+        ]
+    };
+    return caps;
+}
+
 /*
 * -----------------------------  CommonWeb_OpenBrowserToURL ---------------------------
 	* Opens the specified browser to the assigned URL and optional organization. Processes the DoMaximize
@@ -9263,7 +9278,7 @@ function CommonWeb_SetVerifyMaskEditBoxValue (/**string*/strActionName,/**string
 * @author Last Edited By:
 * @author Edit Comments: (Include email, date and details)
 */
-function CommonWeb_ClickElement (strLocation, strElemFullPath, strElemName, strElemType) { // Return type any
+function CommonWeb_ClickElement (/**string*/strLocation, /**string*/strElemFullPath, /**string*/strElemName, /**string*/strElemType) { 
 	//GlobalVars
 	let gblNull = GblNull;
 	let gblUndefined = GblUndefined;
@@ -9313,7 +9328,6 @@ function CommonWeb_ClickElement (strLocation, strElemFullPath, strElemName, strE
 		strMethodDetails = "The location '" + strLocation + "' '" + strElemName + "'" + strElemType + " DID NOT RETURN an ELEMENT.";
 	}
 	//Update the map
-	/** PGK Jun 13, 2025 reporting should be addressed in the calling function. Most common functions are called directly from RVL but not this one */
 	mapResults.boolPassed = boolPassed.toString();
 	mapResults.strMethodDetails = strMethodDetails;
 	return mapResults;
@@ -9325,6 +9339,8 @@ function CommonWeb_ClickElement (strLocation, strElemFullPath, strElemName, strE
 * @param weElement		  The web element to click
 * @param strElemName		The meaningful name of the element
 * @param strElemType		The element type (EditBox, Button, etc.)
+* @param boolCheckElemState		Check the element state? true/false
+* @param boolDoStepReporting		Execute the Step Reporting in this function? true/false
 *
 * @return mapResults		 The results showing Passed and method details.
 *
@@ -9334,47 +9350,43 @@ function CommonWeb_ClickElement (strLocation, strElemFullPath, strElemName, strE
 * @author Last Edited By:
 * @author Edit Comments: (Include email, date and details)
 */
-function CommonWeb_ClickWebElement (weElement, strElemName, strElemType) { // weElement is `any`, return type `any`
+function CommonWeb_ClickWebElement (weElement, strElemName, strElemType, /**boolean*/boolCheckElemState, /**boolean*/boolDoStepReporting) { 
 	//GlobalVars
-	let gblNull = GVars.GblNull('Value');
-	let gblUndefined = GVars.GblUndefined('Value');
-	let gblLineFeed = GVars.GblLineFeed('Value');
+	if (boolDoStepReporting == null){
+		boolDoStepReporting = true;
+	}
+	let gblNull = GblNull;
+	let gblUndefined = GblUndefined;
+	let gblLineFeed = GblLineFeed;
 	//Create the output values
 	// Declare the variables
 	let strTestObjType = strElemType;
 	let mapResults = {}; // Mimic Groovy Map
 	let strMethodDetails; // Type inferred
 	let boolPassed = true;
+	let boolElementStatePassed
 	//Process the element
 	if (weElement != null) {
 		//Highlight
-		if (TCExecParams.getBoolDoHighlight() == true) {
-			let mapHighlight = {}; // Mimic Groovy Map
-			mapHighlight = CWCore.objHighlightElementJS(weElement, strElemType, strElemName); // Check elemType against strTestObjType
+		if (boolDoHighlight == true) {
+			CommonWeb.HighlightElement(weElement);
 		}
-		//Check the element state (Enabled, Visible)
-		let mapResultsElementState = {}; // Mimic Groovy Map
-		mapResultsElementState = CWCore.objVerifyState(weElement, strElemName, true, true);
-		//Output results
-		let boolElementStatePassed = StringsAndNumbers.JComm_StringToBoolean (mapResultsElementState.boolPassed);
-		let strVerElementStateResults = mapResultsElementState.strMethodDetails;
+		if (boolCheckElemState == true){
+			//Check the element state (Enabled, Visible)
+			let mapResultsElementState = {}; // Mimic Groovy Map
+			mapResultsElementState = CommonWebCore.objVerifyState(weElement, strElemName, true, true);
+			//Output results
+			boolElementStatePassed = StringsAndNumbers.JComm_StringToBoolean (mapResultsElementState.boolPassed);
+			let strVerElementStateResults = mapResultsElementState.strMethodDetails;
+		}else{
+			boolElementStatePassed = true //Always true if we do not check the state.
+		}			
 		//SetVerify the values
 		if (boolElementStatePassed == true) {
-			//Catch any exception for the click
-			//Add try catch
-			try {
-				weElement.click();
-				strMethodDetails = "The web element assigned '" + strElemName + "' " + strElemType + " was clicked.";
-				if (TCExecParams.getBoolDoDebug()== true) {
-					Tester.Message(strMethodDetails);
-				}
-			}
-			catch (eElementClick) {
-				Tester.Message(ExceptionUtils.getStackTrace(eElementClick));
-				strMethodDetails = 'Exception occurred!!! SEE ERROR STACK TRACE: ' + ExceptionUtils.getStackTrace(eElementClick) +
-						" Will try to capture using object XPath"; // Note: This "Will try to capture" part is misleading here.
-				boolPassed = false;
-			}
+			Tester.SuppressReport(true)
+			weElement.DoClick();
+			Tester.SuppressReport(false)
+			strMethodDetails = "The web element assigned '" + strElemName + "' " + strElemType + " was clicked.";
 		}
 		else
 		{
@@ -9387,11 +9399,18 @@ function CommonWeb_ClickWebElement (weElement, strElemName, strElemType) { // we
 	{
 		boolPassed = false;
 		strMethodDetails = "The web element assigned '" + strElemName + "'" + strElemType + " WAS NULL!!!";
+	}if (boolDoStepReporting == true){
+		//Update the TestStepResults
+		TestStepResults.StepActual = strMethodDetails;
+		TestStepResults.StepData = GblNotApplicable; 
+		TestStepResults.StepPassed = boolPassed;
+		TestExecReporting.ReportStepResults();
+	}else{
+		//Update the map
+		mapResults.boolPassed = boolPassed.toString();
+		mapResults.strMethodDetails = strMethodDetails;
+		return mapResults;
 	}
-	//Update the map
-	mapResults.boolPassed = boolPassed.toString();
-	mapResults.strMethodDetails = strMethodDetails;
-	return mapResults;
 }
 /* BUTTON */
 /**
@@ -9428,14 +9447,14 @@ function CommonWeb_ClickButton (/**string*/strActionName,/**string*/strLocation,
 		//Return the Element Xpath and concantenate to the strLocXPath
 		let strElemXpath = getORXPath(strElemName);
 		if (boolDoDebug === true) {
-			Tester.Message('The SetVerifyMaskEditBoxValue.strLocXPath: ' + strLocXPath)
+			Tester.Message('The CommonWeb_ClickButton.strLocXPath: ' + strLocXPath)
 		}
 		if (boolDoDebug === true) {
-			Tester.Message('The SetVerifyMaskEditBoxValue.Element ' + strElemName + ' XPath is: ' + strElemXpath)
+			Tester.Message('The CommonWeb_ClickButton.Element ' + strElemName + ' XPath is: ' + strElemXpath)
 		}
 		let strElemFullPath = strLocXPath + strElemXpath
 		if (boolDoDebug === true) {
-			Tester.Message('The SetVerifyMaskEditBoxValue.FullXPath is: ' + strElemFullPath)
+			Tester.Message('The CommonWeb_ClickButton.FullXPath is: ' + strElemFullPath)
 		}
 		//Return the element
 		weButton = CommonWebCore.returnWebElement(strElemFullPath);

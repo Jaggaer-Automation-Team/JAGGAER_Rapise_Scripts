@@ -62,49 +62,10 @@ function CommonWebCore_returnWebElement(strObjXPath) {
 	let boolPassed = true;
 	const gblLineFeed = GblLineFeed;
 	let strMethodDetails; // Will be assigned later
-	//var /**WebElementWrapper*/weElement = WebDriver.FindElementByXPath(strObjXPath)
-	//weElement = Navigator.DOMFindByXPath(strObjXPath);
+	if (boolDoDebug == true){
+		Tester.Message('CommonWebCore_returnWebElement.strObjXPath: ' + strObjXPath)
+	}
 	var weElement = Navigator.SeSFind(strObjXPath)
-	/** replaced all the stale element code with simple selenium actions
-		const driver = TestCaseObject.tcDriver; // Assumes TestCaseObject.tcDriver returns a WebDriver instance
-	const waitTime = intMaxWaitTimeSecs * 1000; // Convert seconds to milliseconds
-
-	const waitElem = new WebDriverWait(driver, waitTime);
-
-	//Wrap in a try and catch the stale element
-	try {
-		weElement = waitElem.until(until.presenceOfElementLocated(By.xpath(strObjXPath)));
-	}
-	catch (e) {
-		// Original: StaleElementReferenceException, then generic e
-		if (e && e.name === 'StaleElementReferenceError') { // Catch StaleElementReferenceException
-			console.log(e.stack); // Equivalent to ExceptionUtils.getStackTrace(se)
-			DateTime.WaitSecs(TSExecParams.getIntViewDelaySecs()); // Assumes DateTime.WaitSecs is blocking
-			const intMaxRetry = TSExecParams.getIntMaxRetryCount();
-			//Retry finding the element
-			for (let loopRetry = 1; loopRetry < intMaxRetry; loopRetry++) {
-				try {
-					weElement = waitElem.until(until.presenceOfElementLocated(By.xpath(strObjXPath)));
-					break; //Exit the loop since we did not return a stale element
-				}
-				catch (loopError) {
-					if (loopError && loopError.name === 'StaleElementReferenceError') {
-						console.log(loopError.stack);
-					} else {
-						// Re-throw other errors
-						throw loopError;
-					}
-				}
-			}
-		} else {
-			// Generic exception catch
-			if (boolDoDebug === true) {
-				console.log('The Element WAS NOT FOUND By.Xpath(' + strObjXPath + ')!!! See Expeception error: ' + gblLineFeed + (e instanceof Error ? e.stack : String(e)));
-			}
-			boolPassed = false; // Mark as failed if element not found due to other error
-		}
-	}
-	*/
 	if (weElement === null ) { // Check for null or undefined
 		strMethodDetails = 'The Element WAS NOT FOUND By.Xpath(' + strObjXPath + ')!!!';
 		boolPassed = false; // Ensure boolPassed is false if element is not found

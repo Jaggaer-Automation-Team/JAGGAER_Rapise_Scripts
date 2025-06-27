@@ -117,11 +117,10 @@ function CommonWeb_ReturnBrowserProfileName (strAssgBrowser) {
 	if (boolDoDebug === true) {
 		Tester.Message('From function. The assigned browser profiles is: ' + strAssgBrowser)
 	}
-	switch(strAssgBrowser)
+	switch(Text.Trim(strAssgBrowser,false,'" '))
 	{
 		case 'Chrome':
 			strBrowserProfile = 'Selenium - Chrome';
-			GetWebDriverNonProfileCapabilities(strBrowserProfile);
 			break;
 		case 'Edge':
 			strBrowserProfile = 'Selenium - Edge';
@@ -133,9 +132,9 @@ function CommonWeb_ReturnBrowserProfileName (strAssgBrowser) {
 			strBrowserProfile = 'Internet Explorer HTML';
 			break;
 		default:
-			strBrowserProfile = TComm_Undefined
+			strBrowserProfile = GblUndefined
 	}
-	if (boolDoDebug === false) {
+	if (boolDoDebug === true) {
 		Tester.Message('From CommonWeb_ReturnBrowserProfileName. The specified browser profiles is: ' + strBrowserProfile)
 	}
 	return strBrowserProfile
@@ -9430,7 +9429,8 @@ function CommonWeb_ClickWebElement (weElement, strElemName, strElemType, /**bool
 * @author Edit Comments: (Include email, date and details)
 */
 function CommonWeb_ClickButton (/**string*/strActionName,/**string*/strLocation, /**string*/strLocXPath, /**string*/strElemName, /**boolean*/ boolClickBtn){ // Return type any
-	if (boolClickBtn == true){
+
+	if (StringsAndNumbers.JComm_StringIsBoolean(boolClickBtn) == true){
 		//GlobalVars
 		let gblNull = GblNull;
 		let gblUndefined = GblUndefined;

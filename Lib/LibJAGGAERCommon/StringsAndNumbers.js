@@ -470,7 +470,7 @@ function StringsAndNumbers_JComm_StringToBoolean (strInputText) {
 	//NOTE: WILL ALWAYS RETURN FALSE IF THE STRING LOWER CASE DOES NOT EQUAL 'true'
 	let boolValue = false;
 	if (strInputText != null) {
-		if (String(strInputText).toLowerCase() == 'true') {
+		if (String(strInputText).toLowerCase().trim() == 'true') {
 			boolValue = true;
 		}
 	}

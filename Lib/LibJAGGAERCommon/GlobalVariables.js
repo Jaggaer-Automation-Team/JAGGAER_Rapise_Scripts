@@ -461,7 +461,7 @@ if(typeof(intMaxRetryCount)=='undefined') var intMaxRetryCount = 10;
 if(typeof(intDelayRetrySecs)=='undefined') var intDelayRetrySecs = 5;
 if(typeof(boolDoDebug)=='undefined') var boolDoDebug = false;
 if(typeof(boolOutputDetailedMessages)=='undefined') var boolOutputDetailedMessages = false;
-if(typeof(boolTakeSnapShot)=='undefined') var boolTakeSnapShot = false;
+if(typeof(boolTakeSnapShot)=='undefined') var boolTakeSnapShot = true;
 if(typeof(boolDoHighlight)=='undefined') var boolDoHighlight = false;
 if(typeof(intHighlightCount)=='undefined') var intHighlightCount = 3;
 if(typeof(boolExcelSourceFile)=='undefined') var boolExcelSourceFile = false;
